@@ -1,0 +1,105 @@
+/*  FONT
+font-family: 'Fraunces', serif;
+
+font-family: 'Montserrat', sans-serif;
+
+*/
+
+/*Variables*/
+
+
+:root{
+    
+    /*Primary*/
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+
+    /*Neutral*/
+
+--Very_dark_blue: hsl(212, 21%, 14%);
+--Dark_grayish_blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+
+    /*Font size*/
+
+--body_p:14px;    
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: var(--body_p);
+    background-color: var(--Cream);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-top: 25px;
+}
+
+.section_image{
+    width: 343px;
+    height: 240px;
+    background-image: url(/assets/images/image-product-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.section_info{
+    font-family: 'Montserrat', sans-serif;
+    width: 325px;
+}
+
+.info_type{
+    margin-top: 25px;
+}
+
+.info_title{
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    margin-top: 12px;
+}
+
+.info_description{
+    line-height: 24px;
+    margin-top: 25px;
+}
+
+.info_price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px;
+    
+}
+
+.actual_price{
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    
+}
+
+.previous_price{
+    margin-left: 20px;
+}
+
+.info_button{}
+
+.button{
+
+}
+
+.cart_logo{}
+
+.button_description{}
+
+.attribution{}
