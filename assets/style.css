@@ -1,132 +1,150 @@
 /*Variables*/
 
-:root{
-    
+:root {
+
     /*Primary*/
---Dark-cyan: hsl(158, 36%, 37%);
---Cream: hsl(30, 38%, 92%);
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Dark-cyan_hover: hsl(159, 49%, 22%);
+    --Cream: hsl(30, 38%, 92%);
 
     /*Neutral*/
 
---Very_dark_blue: hsl(212, 21%, 14%);
---Dark_grayish_blue: hsl(228, 12%, 48%);
---White: hsl(0, 0%, 100%);
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
 
     /*Font*/
 
---ff_p:'Montserrat', sans-serif;
---ff_title_price:'Fraunces', serif;
+    --ff_p: 'Montserrat', sans-serif;
+    --ff_title_price: 'Fraunces', serif;
 
---body_p:0.875rem; 
---fs_price:2rem;   
+    --fs_body: 0.875rem;
+    --fs_price: 2rem;
 
---fw_mont_regular:500;
---fw_mont_bold:700;
---fw_frau_bold:700;
+    --fw_mont_regular: 500;
+    --fw_mont_bold: 700;
+    --fw_frau_bold: 700;
 
     /*Border radius*/
 
---br_all:0.5rem;
+    --br_all: 0.5rem;
 
-    /*main size*/
-
---ms_mobile:92vw;
 }
 
 
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: var(--ff_p);
-    font-size: var(--body_p);
+    font-size: var(--fs_body);
     font-weight: var(--fw_mont_regular);
     color: var(--Dark_grayish_blue);
     background-color: var(--Cream);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 342px;
+    background-color: var(--White);
+    border-radius: var(--br_all);
+    overflow: hidden;
     display: grid;
     place-items: center;
 }
 
-.main{
-    width: var(--ms_mobile); 
-    margin: 0.92rem;
-    border-radius: var(--br_all);
-    overflow: hidden;
-    background-color: var(--White);
-}
-
-.section_image{
-    width: 100%;
-    height: 70vw;
+.section_image {
     background-image: url(/assets/images/image-product-mobile.jpg);
-    background-position: center;
     background-size: cover;
-} 
-
-
-.section_info{
-    display: grid;
-    padding: 22px;
-    background-color: var(--White);
+    background-position: center;
+    width: 100%;
+    height: 240px;
 }
 
-.info_title{
-    margin-top: 12px;
+
+.section_info {
+    background-color: var(--White);
+    width: 295px;
+    margin-top: 25px;
+}
+
+.info_title {
     font-family: var(--ff_title_price);
     font-size: 32px;
     color: var(--Very_dark_blue);
+    margin-top: 10px;
 }
 
-.info_description{
-    width: 18.43rem;
-    margin-top: 25px;
-    line-height: 24px;
+.info_description {
+    margin-top: 14px;
 }
 
-.info_price{
+.info_price {
     display: flex;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 26px;
+    gap: 1rem;
 }
 
-.actual_price{
+.actual_price {
     font-family: var(--ff_title_price);
     font-size: var(--fs_price);
     color: var(--Dark-cyan);
 }
 
-.previous_price{
-    margin-left: 20px;
-}
-
-.button{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 79%;
-    height: 3rem;
-    margin-top: 1.3rem;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 1rem;
+.button {
+    width: 100%;
+    height: 48px;
+    margin-top: 20px;
+    margin-bottom: 24px;
     font-weight: var(--fw_mont_bold);
     background-color: var(--Dark-cyan);
     color: var(--White);
     border: 0;
     border-radius: var(--br_all);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
 }
 
-.attribution{}
 
-@media (min-width:600px){
+@media (min-width:600px) {
     
-    .main{
-        display: grid;
-        grid-template-columns: 50% 50%;
+    .main {
+        width: 603px;
+        height: 450px;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .section_image {
+        height: 100%;
+    }
+    
+    .parfum_img {
+        width: 50%;
+        background-image: url(/assets/images/image-product-desktop.jpg);
+        background-size: cover;
+    }
+    
+    .section_info{
+        width: 245px;
+        margin-top: 0;
+    }
+    
+    .button:hover {
+        cursor: pointer;
+        background-color: var(--Dark-cyan_hover);
     }
 
+    .attribution {
+    }
 }
