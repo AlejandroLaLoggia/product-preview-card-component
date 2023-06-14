@@ -127,10 +127,6 @@ body {
     
     .section_image {
         height: 100%;
-    }
-    
-    .parfum_img {
-        width: 50%;
         background-image: url(images/image-product-desktop.jpg);
         background-size: cover;
     }
