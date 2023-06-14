@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/AlejandroLaLoggia/product-preview-card-component)
-- Live Site URL: [gitpage](https://your-live-site-url.com)
+- Live Site URL: [gitpage](https://alejandrolaloggia.github.io/product-preview-card-component/)
 
 ## My process
 
