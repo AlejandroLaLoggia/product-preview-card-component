@@ -31,7 +31,7 @@
 
 }
 
-
+/*----------------STYLES----------------------*/
 
 * {
     box-sizing: border-box;
@@ -145,6 +145,4 @@ body {
         background-color: var(--Dark-cyan_hover);
     }
 
-    .attribution {
-    }
 }
