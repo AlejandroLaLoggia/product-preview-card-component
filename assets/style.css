@@ -62,7 +62,7 @@ body {
 }
 
 .section_image {
-    background-image: url(/assets/images/image-product-mobile.jpg);
+    background-image: url(assets/images/image-product-mobile.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -131,7 +131,7 @@ body {
     
     .parfum_img {
         width: 50%;
-        background-image: url(/assets/images/image-product-desktop.jpg);
+        background-image: url(assets/images/image-product-desktop.jpg);
         background-size: cover;
     }
     
